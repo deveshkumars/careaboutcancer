@@ -187,29 +187,17 @@
 </head>
 <body>
 
-	<nav id="mainNav" style="width: 100%; background: #222; color: #fff; padding: 10px 0; font-family: sans-serif; box-shadow: 0 2px 4px rgba(0,0,0,0.2); position: fixed; top: 0; left: 0; z-index: 1000;">
-		<div style="max-width: 900px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0 20px;">
+	<nav style="width: 100%; background: rgba(34,34,34,0.8); color: #fff; padding: 10px 0; font-family: sans-serif; box-shadow: 0 2px 4px rgba(0,0,0,0.2); position: fixed; top: 0; left: 0; z-index: 1000;">
+		<div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0 8px;">
 			<span style="font-weight: bold; font-size: 1.1em;">Care about Cancer Maze Game</span>
 			<ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 20px;">
 				<!-- <li><a href="/" style="color: #fff; text-decoration: none;">Game</a></li> -->
-				<li><a href="https://forms.gle/8tPYuPQJRnR4CDth6" style="color: #fff; text-decoration: none;">Form</a></li>
-				<li><a href="https://drive.google.com/file/d/1V-XRI0QjluLEiRh3LaZ_NXpRWGOcc3eD/view" style="color: #fff; text-decoration: none;">Lesson Plan</a></li>
+				<li><a href="https://forms.gle/8tPYuPQJRnR4CDth6" style="color: #0011ff; text-decoration: none;" target="_blank">Form</a></li>
+				<!-- <li><a href="https://drive.google.com/file/d/1V-XRI0QjluLEiRh3LaZ_NXpRWGOcc3eD/view" style="color: #fff; text-decoration: none;" target="_blank">Lesson Plan</a></li> -->
 			</ul>
 		</div>
 	</nav>
-	<div id="navSpacer"></div>
 	<script>
-    // Adjust body padding-top to nav height to prevent overlap
-    function adjustBodyPaddingForNav() {
-        var nav = document.getElementById('mainNav');
-        var spacer = document.getElementById('navSpacer');
-        if (nav && spacer) {
-            var navHeight = nav.offsetHeight;
-            spacer.style.height = navHeight + "px";
-        }
-    }
-    window.addEventListener('DOMContentLoaded', adjustBodyPaddingForNav);
-    window.addEventListener('resize', adjustBodyPaddingForNav);
 
     (function() {
         //Initialization
@@ -226,6 +214,7 @@
             game.startGameLoop();
         });
     })();
+
 	</script>
 </body>
 </html>
